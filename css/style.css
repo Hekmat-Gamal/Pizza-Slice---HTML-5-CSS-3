@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+*::selection{
+    background-color: #ffc300;
+    color: white;
+}
+.clear{
+    clear: both;
+}
+/* Navbar section start */
+.bar{
+    background-color: #ba181b;
+    color: white;
+    width: 100%;
+    height: 50px;
+    opacity: 0.9;
+    font-size: 30px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.bar .logo{
+    padding: 7px;
+    float:left;
+    margin-left: 30px;
+    font-weight: bold;   
+}
+.bar .logo:hover{
+    color: #ffc300;
+}
+.bar ul{
+    list-style-type: none;
+    /* margin-right: 15px; */
+    margin-top: 5px;
+    font-size: 25px;
+}
+.bar ul li{
+    display: inline-block;
+    padding: 7px;
+    /* margin-right: 5px; */
+}
+.bar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.bar ul li a:hover{
+    text-decoration:underline ;
+}
+.bar ul li:last-child :hover{
+    color: #ffc300;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* Navbar section end */
+/* Slogan section start */
+.slogan{
+    width: 80%;
+    height: 640px;
+    position: relative;
+    background-image: url("../imgs/pizza\ \(6\).jpg");
+    background-size:cover;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 15px auto;
+    color: #3c474a;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.slogan .sloganContent{
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left:25px;
+
+}
+/* Slogan section End */
+/* Popular Section Start */
+.popular
+{
+    width: 80%;
+    margin: 15px auto 0 ;
+    color: #f1373d;
+}
+.popular h2{
+    padding: 5px;
+    text-align: center;
+}
+.popular .popContent {
+    display: flex;
+}
+.popular .popContent .popularItem{
+    width: 31%;
+    height: 400px;
+    margin: 1% 1% 0;
+    text-align: center;
+    border: 1px solid #ba181b;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.popular .popContent .popularItem img{
+    margin-top: 10px;
+}
+.popular .popContent .popularItem h3{
+    color: #ba181b;
+    margin: 2px;
+    padding: 5px;
+}
+.popular .popContent .popularItem p{
+    color: #3c4743;
+    text-transform: capitalize;
+    word-spacing: 3px;
+    line-height: 1.4;
+}
+.popular .popContent .popularItem select{
+    height: 25px;
+    margin-top: 15px;
+    text-align: center;
+    color: #3c4743;
+    border: 1px solid #ba181b;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.popular .popContent .popularItem select:focus option{
+    background-color: #ba181b;
+    color: white;
+}
+.popular .popContent .popularItem button{
+    background-color: #71a400;
+    color: white;
+    border: transparent;
+    width: 111px;
+    height: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+/* Popular Section End */
+/* Offers Section Start */
+.offers{
+    width: 80%;
+    margin: 15px auto 25px;
+    text-align: center;
+   
+}
+.offers h2{
+    margin-top: 15px;
+    padding: 10px;
+    color: #f1373d;
+} 
+.offers .offersContent{
+    display: flex;
+}
+.offers .offersContent .offerItem{
+    width: 17%;
+    margin: 0.5%;
+    border: 1px solid #f1373d;;
+    line-height: 1.2;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.offers .offersContent .specialItem{
+    width: 60%;
+    line-height: 1.5;
+}
+.offers .offersContent .ordenary{
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+.offers .offersContent .ordenary:hover{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+.offers .offersContent .offerItem .image{
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.offers .offersContent .offerItem .image:hover{
+    opacity: 1;
+}
+.offers .offersContent .offerItem .familyimg{
+    background-image: url('../imgs/family\ pizza.JPG');
+    background-position: center -128px;
+}
+.offers .offersContent .offerItem .friendsimg{
+        background-image: url('../imgs/friends\ pizza.JPG');
+}
+.offers .offersContent .offerItem .coupleimg{
+    background-image: url('../imgs/couple.jpg');
+}
+.offers .offersContent .offerItem h3{
+    padding: 10px;
+    color: #f1373d;
+}
+.offerItem p {
+    color: #3c4743;
+}
+.offers .offersContent .offerItem select{
+    color: #3c4743;
+    text-align: center;
+    border: 1px solid #f1373d;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.offers .offersContent .offerItem select:focus option{
+    background-color: #ba181b;
+    color: white;
+}
+.offers .offersContent .offerItem .bold{
+    font-weight: bold;
+}
+.offers .offersContent .offerItem button{
+    width: 200px;
+    height: 20px;
+    background-color: #71a400;
+    color: white;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* Offers Section End */
+/*  Featuers Section Start  */
+.features{
+    width: 80%;
+    margin: 35px auto 10px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #f1373d;
+}
+.features .featItem{
+    width: 35%;
+    margin: 20px;
+    text-align: center;
+}
+.features .featItem .image{
+    background-image: url('../imgs/pizza\ \(1\).jpeg');
+    background-repeat: no-repeat;
+    height: 55px;
+} 
+.features .featItem .imgSave{
+    background-position: center -180px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.features .featItem .imgSave:hover{
+    background-position: center -277px;
+}
+.features .itemDelivery{
+    border-right: 2px solid #f1373d;
+    border-left: 2px solid #f1373d;
+}
+.features .featItem .ImgDelivery{
+    background-position: center -547px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.features .featItem .ImgDelivery:hover{
+    background-position: center -639px;
+}
+.features .featItem .imgService{
+    background-position: center -363px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.features .featItem .imgService:hover{
+    background-position: center -454px;
+}
+/*  Featuers Section End  */
+/* Menu Section Start */
+.menu{
+    width: 80%;
+    margin: 25px auto;
+    text-align: center;
+    color: #f1373d;
+    position: relative;
+}
+.menu .titles{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.menu .titles .title{
+    color: #3c4743;
+    text-align: center;
+    width: 20%;
+    height: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.menu .titles .title:hover{
+    background-color: #ba181b;
+    color: aliceblue;
+    cursor: pointer;
+}
+.menu .titles .active{
+    background-color: #ba181b;
+    color: aliceblue;
+}
+.menu .menuContent{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    margin-top: 5px;
+}
+.menu .menuItem{
+    border: 1px solid #f1373d;
+    border-radius: 10px;
+    text-transform: capitalize;
+    width: 20%;
+    height: 300px;
+    margin: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+.menu .menuItem:hover{
+    transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    -ms-transform:scale(0.9);
+    -o-transform:scale(0.9);
+}
+
+.menu .menuItem h4{
+    padding: 10px;
+    color: #f1373d;
+}
+.menu .menuItem p{
+    color: #3c4743;
+}
+.menu .menuItem button{
+    cursor: pointer;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    border: transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #71a400;
+    color: white;
+}
+.menu .menuContent .menuItem .price{
+    opacity: 0;
+    width: 50px;
+    position: absolute;
+    bottom: 25%;
+    left: -58px;
+}
+.menu .menuContent .menuItem:hover .price{
+    opacity: 1;
+}
+.menu .menuContent .menuItem:hover .price .ParaPrice{
+    color: #f1373d;
+    font-weight: bold;
+}
+
+/* Menu Section End */
+/* Footer Section Start */
+.footerBar{
+    width: 100%;
+    height: 100px;
+    margin-top: 35px;
+    background-color:#ba181b;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+}
+.footerBar .footerInfo{
+    width: 50%;
+    text-align: center;
+}
+.footerIcons{
+    height: 100%;
+    width: 50%;
+    border-left: 10px solid ;
+    text-align: justify;
+    overflow: hidden;
+}
+.footerIcons i{
+    position: relative;
+    left: 45%;
+}
+.footerIcons .fab{
+    display: block;
+    margin-top: 10px;
+    
+}
+/* Footer Section End */
